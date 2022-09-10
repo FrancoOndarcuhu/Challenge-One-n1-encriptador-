@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto - Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="encriptador.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="encabezado">
+                <img src="Imagenes/Logo.png" alt="Logo Alura">
+            
+                <h1><p class="titulo">Encriptador de texto - Alura</p></h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="seccion1">
+               <textarea class="mensaje" id="mensaje" placeholder="Ingesar texto" cols="30" rows="10"></textarea>
+
+               <div>
+                    <h1 class="textoAdvertencia">
+                        <p id="advertencia">&#9888</p>
+                        <p>Solo letras minúsculas, sin acentos ni caracteres especiales</p>
+                    </h1>
+               </div>
+            
+               <div class="botones">     
+                  <input type="button" value="encriptar" class="botonEncriptar">
+                  <input type="button" value="desencriptar" class="botonDesencriptar">   
+                </div>
+            </section>
+
+            <section class="seccion2">
+                <div class="mensajeResuelto" id="mensajeResuelto">
+                    <div class="textos" id="textos">
+                        <p id="ningunMensaje">Ningún mensaje fue encontrado</p>
+                        <p id="ingresaTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+
+                <div class="botonCopiarContenedor">
+                    <input type="button" value="copiar" class="botonCopiar">
+                </div>
+            </section>         
+        </main>
+        
+        <footer>
+            <div class="imagenFooter">
+                <img src="Imagenes/Logo.png" alt="">
+            </div>
+            <p class="textoFooter">&copy copyright encriptador Alura - 2022</p>
+        </footer>
+    </body>
+
+    <script src="encriptador.js"></script>
+
+</html>
